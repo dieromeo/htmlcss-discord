@@ -9,7 +9,6 @@ RESET
     padding: 0;
     box-sizing: border-box;
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    line-height: 30px;
 }
 
 
@@ -27,28 +26,13 @@ DEBUG
 }
 */
 
-.debug .second-header {
-
-    height: 520px;
-}
-
 /*.debug .header-box {
     background-color: #ee82ee;
     height: 415px;
     border: 2px dashed black;
 }*/
 
-.debug section :first-child {
-    background-color: #1e90ff;
-    height: 520px;
-    border: 2px dashed black;
-}
 
-.debug section :last-child {
-    background-color: #ffc0cb;
-    height: 520px;
-    border: 2px dashed black;
-}
 
 .debug #box {
     background-color: #228b22;
@@ -100,6 +84,29 @@ COMMON
     display: inline-block;
 }
 
+h1,
+h2,
+p {
+    line-height: 30px;
+}
+
+h1,
+h2 {
+    font-size: 35px
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.container.big {
+    max-width: 1250px;
+}
+
+.row {
+    display: flex;
+}
+
 /*
 ------------
 HEADER
@@ -140,25 +147,22 @@ header {
 
 .login {
     justify-content: flex-end;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .header-box {
     width: 945px;
     margin: 0 auto;
-    align-self: center;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .second-header {
     background-image: url(../img/jumbo.png);
     background-size: cover;
+    padding: 120px 0;
 }
 
 h1 {
-    font-size: 35px;
     padding-bottom: 50px;
 }
 
@@ -179,25 +183,25 @@ MAIN
 */
 
 section {
-    justify-content: center;
     padding: 50px;
 }
 
-section :first-child {
-    width: 750px;
+.col-big {
+    max-width: 65%;
+    background-color: #1e90ff;
 }
 
-section :last-child {
-    width: 500px;
-}
-
-.reverse {
-    background-color: #d3d3d3;
-    flex-direction: row-reverse;
+.col-small {
+    flex-grow: 1;
+    background-color: #ffc0cb;
 }
 
 .section-box {
     background-color: #d3d3d3;
+}
+
+h2 {
+    padding-bottom: 40px;
 }
 
 #box {
