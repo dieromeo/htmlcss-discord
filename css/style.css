@@ -31,10 +31,8 @@ DEBUG
     height: 415px;
     border: 2px dashed black;
 }*/
-
-.debug footer {
-    background-color: #23272a;
-}
+/*
+.debug footer {}
 
 .debug .aside {
     background-color: #f08080;
@@ -206,7 +204,7 @@ section:nth-child(even) {
     background-color: #d3d3d3;
 }
 
-.button.download {
+.button.blu {
     background-color: #7289da;
     color: white;
 }
@@ -220,6 +218,7 @@ FOOTER
 
 footer {
     color: white;
+    background-color: #23272a;
 }
 
 .first-footer .col-small {
@@ -254,8 +253,7 @@ i {
 }
 
 .second-footer {
-    width: 1250px;
-    margin: 0 auto;
     padding: 20px 0;
+    display: flex;
     justify-content: space-between;
 }
