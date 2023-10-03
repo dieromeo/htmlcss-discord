@@ -217,6 +217,11 @@ section:nth-child(even) {
 FOOTER
 ------------
 */
+
+footer {
+    color: white;
+}
+
 .first-footer .col-small {
     width: 30%;
 }
@@ -230,8 +235,22 @@ FOOTER
     flex-grow: 1;
 }
 
-.colonna {
-    width: 220px;
+footer h2,
+footer h4 {
+    color: #5a6fb2;
+    padding-top: 80px;
+}
+
+.flag {
+    width: 25px;
+}
+
+i {
+    padding: 20px 10px;
+}
+
+.first-footer div {
+    margin: 20px 0;
 }
 
 .second-footer {
